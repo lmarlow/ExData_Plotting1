@@ -26,6 +26,6 @@ loadPowerData <- function(since=NA, before=NA) {
   } else {
     data
   }
-  data$Time <- strptime(paste(data$Date, data$Time), format='%Y-%m-%d %H:%M:%S')
+  data$datetime <- strptime(paste(data$Date, data$Time), format='%Y-%m-%d %H:%M:%S')
   data
 }
